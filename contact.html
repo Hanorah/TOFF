@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Tof Nation</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+       <link href="css/bootstrap.min.css" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/slick.css"/>
+<script src="index.js"></script>
+        <link href="css/style.css" rel="stylesheet">
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "zifpPRCvismOph2og",
+      });
+   })();
+</script>
+       
+        
+    </head>
+    
+    <body>
+        <section class="preloader">
+            <div class="spinner">
+                <span class="sk-inner-circle"></span>
+            </div>
+        </section>
+    
+      
+
+
+        <main>
+         
+            <nav class="navbar navbar-expand-lg">
+                <div class="container"> 
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                      <img src="TOF Logo.png" width="70px" height="70px">
+                    </a>
+
+                    <div class="d-lg-none">
+                        <a href="index1.html" ><i class="fa fa-users fa-2x" style="color: green;"></i></a>
+                       
+                       
+                       </div>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html">Programs</a>
+                            </li>
+                         
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="faq.html">FAQs</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                       
+                        <div class="d-none d-lg-block">
+                            <!-- Beautiful green button -->
+                            <a href="index1.html" class="btn btn-success">Join Our Community</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </nav>   
+
+            <header class="site-header section-padding-img site-header-image">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-10 col-12 header-info">
+                            <h1>
+                                <span class="d-block text-primary">Say hello to us</span>
+                                <span class="d-block text-dark">We would love to 
+                                    <br> hear from you</span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+
+                <img src="t200.jpg" class="header-image img-fluid" alt="">
+            </header>
+
+            <section class="contact section-padding">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-lg-6 col-12">
+                            <h2 class="mb-4">Let's <span>begin</span></h2>
+
+                            <!-- <form class="contact-form me-lg-5 pe-lg-3" role="form"> -->
+
+                                <div class="form-floating">
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required>
+
+                                    <label for="name">Full name</label>
+                                </div>
+
+                                <div class="form-floating my-4">
+                                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
+
+                                    <label for="email">Email address</label>
+                                </div>
+                                
+                                <div class="form-floating my-4">
+                                    <input type="subject" name="subject" id="subject"class="form-control" placeholder="Subject" required>
+
+                                    <label for="subject">Subject</label>
+                                </div>
+
+                                <div class="form-floating mb-4">
+                                    <textarea id="message" name="message" class="form-control" placeholder="Leave a comment here" required style="height: 160px"></textarea>
+
+                                    <label for="message">Tell us about the project</label>
+                                </div>
+
+                                <div class="col-lg-5 col-6">
+                                    <button type="submit" class="form-control" onclick="sendMail()" style="background-color: green;"><b> Send</b></button>
+                                </div>
+                            <!-- </form> -->
+                        </div>
+
+                        <div class="col-lg-6 col-12 mt-5 ms-auto">
+                            <div class="row">
+                                <div class="col-6 border-end contact-info">
+                                    <h6 class="mb-3"><iframe src="https://giphy.com/embed/tiuVSqXX60ciDTbS0k" width="130" height="150" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></h6>
+
+                                </div>
+
+                                <div class="col-6 contact-info">
+                                	<h6 class="mb-3"><iframe src="https://giphy.com/embed/2mnGiKFdjqnzFs7LUb" width="150" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></h6>
+
+                                </div>
+
+                                <div class="col-6 border-top border-end contact-info">
+                                    <h6 class="mb-3"><iframe src="https://giphy.com/embed/3oEjHQTIhioOYUpzMs" width="170" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></h6>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+       
+       
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+    
+                <div class="col-lg-3 col-10 me-auto mb-4">
+                    <h4 class="text-white mb-3"><a href="index.html">TOF</a> NATION</h4>
+                    <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0" style="font-size: smaller;">Copyright © 2023 <strong></strong></p>
+                    <br>
+                    <p class="copyright-text" style="font-size: smaller;">Designed by <a href="#" target="_blank">Tof Nation</a></p>
+                    <a href="sign-up.html" class="btn btn-success btn-sm">Join Our Community</a>
+                </div>
+                
+    
+                <div class="col-lg-5 col-8">
+                    <h5 class="text-white mb-3">TEEN ON FIRE LEADERSHIP NETWORK</h5>
+                    <p style="font-size: smaller;">Raising teens into leadership with the focus on Public Service and Leadership Development</p>
+                    <hr>
+                    <h5 class="text-white mb-3"><a href="contact.html">Contact</a>&nbsp;Us</h5>
+                    <p style="font-size: smaller;">Address : 30, Boundary road GRA Benin City, Edo State, Nigeria</p>
+                    <p style="font-size: smaller;">Phone Number : +234-802-340-1104, +234-905-550-7267</p>
+                </div>
+    
+                <div class="col-lg-3 col-4" style="margin-left: 5em;">
+                    <h5 class="text-white mb-3">Social</h5>
+    
+                    <ul class="social-icon">
+                        <li><a href="https://www.youtube.com/@mytofnation"><i class="fa fa-youtube" style="font-size: 2em;"></i></a></li>&nbsp;&nbsp;
+                        <li><a href="https://wa.me/+2348023401104"><i class="fa fa-whatsapp" style="font-size: 2em;"></i></a></li>&nbsp;&nbsp;
+                        <li><a href="https://www.instagram.com/mytofnation/"><i class="fa fa-instagram" style="font-size: 2em;"></i></a></li>
+                    </ul>
+                </div>
+    
+            </div>
+        </div>
+    </footer>
+       
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    
+    </body>
+</html>

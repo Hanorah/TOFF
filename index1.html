@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOF POPUP</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="primary-buttons-container">
+    <button class="btn-primary" data-type="mentor">PEEK INSIDE</button>
+  </div>
+  <div class="card-container hide">
+    <div class="cls-btn-conatiner">
+      <button class="cls-btn"></button>
+    </div>
+    <h1>WELCOME TO TOF NATION</h1>
+    <p>
+      Embark on your leadership journey with us. 🔥 Choose your path below:
+    </p>
+    <div class="buttons-container">
+      <a href="https://us18.list-manage.com/survey?u=a0acb802707317e3ceb3d2654&id=97e61a7ae6&attribution=false"><button class="modal-btn" data-action="mentor">Volunteer</button></a>
+      <a href="sign-up.html"><button class="modal-btn" data-action="Teen">Teen</button></a>
+      <a href="https://thegladcompany.com/about-us/"><button class="modal-btn" data-action="Parent">Parent</button></a>
+      <a href="contact.html"><button class="modal-btn" data-action="Collaborate">Collaborate</button></a>
+    </div>
+  </div>
+
+    <div class="overlay_container hide"></div>
+    <div class="go-back-container">
+     <a href="index.html"> <button class="go-back-btn"> << GO BACK</button></a>
+    </div>
+    <script>
+      const closeButton = document.querySelector(".cls-btn");
+      const modal = document.querySelector(".card-container");
+      const overlay_conatiner = document.querySelector(".overlay_container");
+      const primary_btns = document.querySelectorAll(".btn-primary");
+      const modalButtons = document.querySelectorAll(".modal-btn");
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && !modal.classList.contains("hide")) {
+          closeModal();
+        }
+      });
+
+      const closeModal = () => {
+        modal.classList.add("hide");
+        overlay_conatiner.classList.add("hide");
+      };
+
+      const showModal = (type) => {
+        overlay_conatiner.classList.remove("hide");
+        modal.classList.remove("hide");
+      };
+
+      closeButton.addEventListener("click", () => {
+        closeModal();
+      });
+
+      primary_btns.forEach((pb) => {
+        pb.addEventListener("click", (event) => {
+          const type = event.target.dataset.type;
+          showModal(type);
+        });
+      });
+
+      modalButtons.forEach((btn) => {
+        btn.addEventListener("click", (event) => {
+          const action = event.target.dataset.action;
+          // Do something based on the action (mentor or student)
+          console.log(`Selected action: ${action}`);
+          closeModal();
+        });
+      });
+
+      overlay_conatiner.addEventListener("click", () => {
+        closeModal();
+      });
+    </script>
+  </body>
+</html>
